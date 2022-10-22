@@ -15,6 +15,7 @@ try:
 
     if len(s) >= len(d):
         num(s, d)
+
     else:
         num(d, s)
 except:
