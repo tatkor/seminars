@@ -12,6 +12,7 @@ def sum(ls):
 
 num = 23593  # вводим подряд числа и преобразовываем их
 lst = [int(i) for i in str(num)]
+print(lst)
 sum(lst)
 
 

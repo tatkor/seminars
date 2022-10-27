@@ -12,7 +12,6 @@ def qw(st1,st2):
     i = 0
     while i < n:
         k = st1[i] * st2[i]
-        #print(k)
         res.append(k)
         i += 1
     print(res)
