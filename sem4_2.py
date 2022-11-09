@@ -14,3 +14,24 @@ elif D > 0:
     print('есть два различных корня')
 else:
     print('корней нет')
+
+#__3. Задайте два числа. Напишите программу, которая найдёт НОК (наименьшее общее кратное) этих двух чисел.___________________________________
+Alexander Bashlaev: def lcm(a, b):
+for i in range(max(a, b), a * b + 1):
+if i % a == 0 and i % b == 0:
+return i
+
+def main():
+try:
+a = int(input('Input number A: '))
+b = int(input('Input number B: '))
+except ValueError as ex:
+print('Input natural number!')
+exit(ex)
+
+print(f'LCM({a}, {b}) = {lcm(a, b)}')
+
+if __name__ == '__main__':
+main()
+
+#
